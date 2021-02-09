@@ -10,8 +10,12 @@ cd iot-version
 
 ###get
 resultversion=$(cat iot-version-ios.h)
-echo $resultversion
+autocc=$[$resultversion+1]
+echo $autocc
+
+###set
+echo $autocc > iot-version-ios.h
 
 git add .
-git commit -m "build@$rc"
+git commit -m "repositories@$rc"
 git push https://$GIT_ACCESS_TOKEN@github.com/tonychanchen/iot-version.git
