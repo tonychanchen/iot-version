@@ -1,0 +1,11 @@
+xcuserdata
+/Pods/
+.DS_Store
+.idea/
+DistributionSummary.plist
+ExportOptions.plist
+*.ipa
+*.xcarchive
+Packaging.log
+build.sh
+iot-p2p/
